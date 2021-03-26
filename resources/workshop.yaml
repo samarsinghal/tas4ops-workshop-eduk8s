@@ -1,20 +1,19 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: lab-k8s-fundamentals
+  name: lab-tas4ops
 spec:
-  title: Kubernetes Fundamentals
-  description: Workshop on getting started with Kubernetes
-  url: https://github.com/eduk8s-labs/lab-k8s-fundamentals
-  vendor: eduk8s.io
-  authors:
-  - Graham Dumpleton
-  difficulty: intermediate
-  duration: 1h
-  tags:
-  - kubernetes
+  title: TAS Operator workshop
+  description: An interactive workshop on TAS operations
+  url: https://github.com/samarsinghal/tas4ops-workshop-eduk8s.git
   content:
-    image: quay.io/eduk8s-labs/lab-k8s-fundamentals:master
+    # image: docker.io/samarsinghal/workshop:latest
+    files: github.com/samarsinghal/tas4ops-workshop-eduk8s
+  vendor: eduk8s.io
+  difficulty: intermediate
+  duration: 60m
+  tags:
+  - containers
   session:
     namespaces:
       budget: medium
@@ -24,5 +23,10 @@ spec:
         layout: split
       console:
         enabled: true
+        vendor: octant
       editor:
+        enabled: true
+      docker:
+        enabled: true
+      registry:
         enabled: true
