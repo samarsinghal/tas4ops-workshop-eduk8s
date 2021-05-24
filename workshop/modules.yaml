@@ -55,8 +55,8 @@ modules:
 config:
     vars:
     - name: LAB_SLOT_ID
-      value: 440
+      value: 240
     - name: LAB_DOMAIN
-      value: pez.vmware.com
+      value: pez.pivotal.io
     - name: LAB_CF_DEPLOYID
       value: cf-a7b9ebc208b14dec252e      
