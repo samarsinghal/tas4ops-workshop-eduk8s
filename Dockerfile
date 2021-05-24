@@ -10,4 +10,4 @@ RUN mv /home/eduk8s/workshop /opt/workshop
 
 RUN fix-permissions /home/eduk8s
 
-USER 1001
+# USER 1001
